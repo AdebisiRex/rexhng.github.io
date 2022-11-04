@@ -1,0 +1,64 @@
+a{
+  display: block ;
+}
+
+.whole{
+  /* position: relative; */
+
+  
+  border: 2px solid white ;
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#slack{
+  display: none;
+}
+#profile_img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+
+#twitter{
+  font-weight: bold;
+  
+}
+div>a{
+  
+  padding: 10px 50px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+ 
+  background-color: lightgrey;
+}
+
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+section>img, footer>img{
+  margin: 0px 10px;
+}
+
+/* Contact */
+.contact{
+  display: grid ;
+  place-items: center;
+  /* padding: 5% 0%; */
+}
+
+
