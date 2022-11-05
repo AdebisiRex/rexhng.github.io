@@ -51,7 +51,7 @@ const Contact = () => {
             <div className="mb-3 form-check form-check-inline">
               <input
                 className="form-check-input me-2"
-                type="radio"
+                type="checkbox"
                 id="email"
                 placeholder="Email"
               />
