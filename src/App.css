@@ -1,64 +1,76 @@
-a{
-  display: block ;
-}
-
-.whole{
-  /* position: relative; */
-
-  
-  border: 2px solid white ;
-  padding: 20px;
-  border-radius: 20px;
-
+.whole {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+.all {
+  padding: 20px;
+  min-height: 100vh;
 }
 
-#slack{
+#slack {
   display: none;
 }
-#profile_img{
+#profile_img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   overflow: hidden;
-  
 }
 
-#twitter{
+#twitter {
   font-weight: bold;
-  
 }
-div>a{
-  
-  padding: 10px 50px;
+div > a {
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
   color: black;
   margin-bottom: 10px;
- 
   background-color: lightgrey;
 }
+footer {
+  bottom: 0px;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+footer > img {
+  padding: 8px 0px;
+}
 
-
-section{
+section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
-section>img, footer>img{
+section > img,
+footer > img {
   margin: 0px 10px;
 }
 
 /* Contact */
-.contact{
-  display: grid ;
+.contact {
+  display: grid;
   place-items: center;
-  /* padding: 5% 0%; */
+ 
 }
-
-
+#message:focus:valid {
+  outline: green;
+}
+#message ~ small {
+  display: none;
+}
+#message:focus:invalid {
+  border: 1px solid red;
+}
+#message:focus:invalid ~ small {
+  color: red;
+  display: block;
+}

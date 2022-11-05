@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="container contact min-vh-100 p-5">
+      <div className="container contact  p-5">
         <div className="w-100">
           <form action="">
             <h1>Contact Me</h1>
@@ -32,7 +32,7 @@ const Contact = () => {
               <label htmlFor="email">Email</label>
               <input
                 className="form-control"
-                type="text"
+                type="email"
                 id="email"
                 placeholder="Email"
               />
@@ -44,8 +44,9 @@ const Contact = () => {
                 placeholder="Send me a message and I'll reply you as soon as possible"
                 id="message"
                 className="form-control"
-                rows="5"
+                rows="5" required
               ></textarea>
+              <small>Please enter a message</small>
             </div>
             <div className="mb-3 form-check form-check-inline">
               <input

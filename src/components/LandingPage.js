@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import slack from "./resources/image.png";
+import github from "./resources/github.png";
 
 import face from "./resources/face-card.png";
 
@@ -6,9 +9,10 @@ const LandingPage = () => {
   return (
     <>
       <div className="whole">
-      <img alt="" src={face} width={200} id="profile_img" />{" "}
-      <p id="twitter">rex_rachid</p>
-      <p id="slack">AdebisiRex</p>
+        <img alt="" src={face} width={200} id="profile_img" />{" "}
+        <p className="m-0" id="twitter">rex_rachid</p>
+        <p id="slack">AdebisiRex</p>
+      </div>
       <hr />
       <div className="anchor">
         <a href="https://training.zuri.team/" id="btn_zuri">
@@ -45,14 +49,13 @@ const LandingPage = () => {
         >
           Design Books
         </a>
-        <a href="/contact">
-          Contact
-        </a>
+        <Link to="/contact">Contact</Link>
       </div>
-      
 
-      
-      </div>
+      <section>
+        <img src={slack} alt="" width={35} />
+        <img src={github} alt="" width={35} />
+      </section>
     </>
   );
 };
