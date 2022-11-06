@@ -49,7 +49,7 @@ const LandingPage = () => {
         >
           Design Books
         </a>
-        <Link to="/contact">Contact</Link>
+        <Link id="contact" to="/contact">Contact</Link>
       </div>
 
       <section>

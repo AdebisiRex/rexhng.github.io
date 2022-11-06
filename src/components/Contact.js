@@ -59,7 +59,7 @@ const Contact = () => {
                 You agree to providing data to AdebisiRex who may contact you
               </label>
             </div>
-            <button className="btn btn-lg form-control btn-primary">
+            <button id="btn__submit" className="btn btn-lg form-control btn-primary">
               {" "}
               Send message
             </button>
